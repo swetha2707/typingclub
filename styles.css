@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+    display: inline-block;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+.text-display {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-area {
+    font-size: 24px;
+    padding: 15px;
+    width: 80%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-area:focus {
+    border-color: #007bff;
+}
+
+.timer {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.start-button, .end-button, .restart-button {
+    font-size: 24px;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.start-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.end-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.restart-button {
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Keyboard Styling */
+.keyboard {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.row button {
+    font-size: 18px;
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #e9ecef;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.row button:hover {
+    background-color: #dee2e6;
+    transform: translateY(-2px);
+}
+
+.row button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Error and Success Styling */
+.error {
+    color: #dc3545;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.success {
+    color: #28a745;
+    font-size: 20px;
+    margin-top: 20px;
+}
